@@ -4,7 +4,7 @@
 
 from .ordered import *
 from .function import *
-from .digraph import DiGraph
-from .graph import Graph
+from .digraph import DiGraph as DiGraph
+from .graph import Graph as Graph
 from .multidigraph import MultiDiGraph
 from .multigraph import MultiGraph

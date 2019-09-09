@@ -19,5 +19,3 @@ __license__: Any
 __date__: Any
 __bibtex__: str
 
-
-from typing import Generic, TypeVar
