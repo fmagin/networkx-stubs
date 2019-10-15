@@ -1,8 +1,18 @@
 import networkx
 
 
+from typing import Generic, TypeVar
 
-g = networkx.Graph([1,2,3,4]) # type: networkx.Graph[int]
-reveal_type(g.nodes)
-reveal_type(list(g.nodes.__iter__()))
-reveal_type(list(g.nodes))
+
+
+g = networkx.DiGraph([(1,2), (2,3)])  # type: networkx.DiGraph[int]
+h = networkx.DiGraph([('a','b'), ('b','c')])  # type: networkx.DiGraph[str]
+
+reveal_type(g)
+reveal_type(h)
+
+j = networkx.compose(g, h)
+
+reveal_type(j)
+
+
