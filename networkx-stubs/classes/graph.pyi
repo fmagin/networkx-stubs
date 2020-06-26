@@ -8,6 +8,7 @@ from networkx.classes.coreviews import AdjacencyView
 from networkx.classes.reportviews import NodeView
 
 T = TypeVar('T')
+
 class Graph(Generic[T]):
     node_dict_factory: Any = ...
     node_attr_dict_factory: Any = ...
