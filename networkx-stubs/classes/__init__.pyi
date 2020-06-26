@@ -6,5 +6,5 @@ from .ordered import *
 from .function import *
 from .digraph import DiGraph as DiGraph
 from .graph import Graph as Graph
-from .multidigraph import MultiDiGraph
-from .multigraph import MultiGraph
+from .multidigraph import MultiDiGraph as MultiDiGraph
+from .multigraph import MultiGraph as MultiGraph
