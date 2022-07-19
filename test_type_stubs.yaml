@@ -1,0 +1,15 @@
+- case: constructor
+  main: |
+    import networkx
+    g = networkx.Graph([(1,2), (2,3)])
+    reveal_type(g)  # N: Revealed type is "networkx.classes.graph.Graph[builtins.int]"
+    h = networkx.DiGraph([('a','b'), ('b','c')])
+    reveal_type(h)  # N: Revealed type is "networkx.classes.digraph.DiGraph[builtins.str]"
+
+- case: networkx.compose
+  main: |
+    import networkx
+    a = networkx.DiGraph([('a','b'), ('b','c')])
+    b = a.copy()
+    c = networkx.compose(a, b)
+    reveal_type(c)  # N: Revealed type is "networkx.classes.digraph.DiGraph[builtins.str]"
