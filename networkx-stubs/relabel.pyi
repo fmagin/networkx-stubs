@@ -7,11 +7,9 @@ from typing import Any, Optional, TypeVar, Dict, Union
 from networkx.classes.digraph import DiGraph
 from networkx.classes.graph import Graph
 
-GraphType = TypeVar('GraphType', bound=Graph)
-
-X = TypeVar("X")
-Y = TypeVar("Y")
+_X = TypeVar("_X")
+_Y = TypeVar("_Y")
 
 
-def relabel_nodes(G: DiGraph[X], mapping: Dict[X, Y], copy: bool = ...) -> DiGraph[Union[X,Y]]: ...
+def relabel_nodes(G: DiGraph[_X], mapping: Dict[_X, _Y], copy: bool = ...) -> DiGraph[Union[_X,_Y]]: ...
 def convert_node_labels_to_integers(G: Any, first_label: int = ..., ordering: str = ..., label_attribute: Optional[Any] = ...): ...

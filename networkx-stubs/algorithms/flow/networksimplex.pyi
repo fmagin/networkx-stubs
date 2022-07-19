@@ -4,6 +4,4 @@
 
 from typing import Any
 
-range = xrange
-
 def network_simplex(G: Any, demand: str = ..., capacity: str = ..., weight: str = ...): ...

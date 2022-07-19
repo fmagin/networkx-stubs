@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup, find_packages
+from setuptools import setup
 import os
 
 packages = \
@@ -22,18 +22,23 @@ def find_stub_files():
                 result.append(file)
     return result
 
-extras_require = \
-{':(python_version >= "2.7" and python_version < "2.8") or (python_version >= "3.3" and python_version < "3.5")': ['typing>=3.6,<4.0']}
+test_requirements = [
+    'mypy',
+    'types-setuptools',
+]
 
-setup_kwargs = {
-    'name': 'networkx-stubs',
-    'version': '0.0.1',
-    'author': 'Florian Magin',
-    'packages': packages,
-    'package_data': {'networkx-stubs': find_stub_files()},
-    'extras_require': extras_require,
-    'python_requires': '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*',
+extras_require = {
+    ':(python_version >= "2.7" and python_version < "2.8") or (python_version >= "3.3" and python_version < "3.5")': ['typing>=3.6,<4.0'],
+    'test': test_requirements,
 }
 
-
-setup(**setup_kwargs)
+setup(
+    name='networkx-stubs',
+    version='0.0.2',
+    author='Florian Magin',
+    packages=packages,
+    package_data={'networkx-stubs': find_stub_files()},
+    extras_require=extras_require,
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*',
+    tests_require=test_requirements,
+)

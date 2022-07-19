@@ -4,7 +4,7 @@
 
 from typing import Any, Optional
 
-import pygraphviz
+import pygraphviz  # type: ignore
 
 from networkx.classes.graph import Graph
 

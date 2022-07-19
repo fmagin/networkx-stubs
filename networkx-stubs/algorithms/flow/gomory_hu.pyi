@@ -5,6 +5,4 @@
 from .edmondskarp import edmonds_karp
 from typing import Any, Optional
 
-default_flow_func = edmonds_karp
-
 def gomory_hu_tree(G: Any, capacity: str = ..., flow_func: Optional[Any] = ...): ...
