@@ -5,6 +5,4 @@
 from networkx.algorithms.flow import edmonds_karp
 from typing import Any, Optional
 
-default_flow_func = edmonds_karp
-
 def k_components(G: Any, flow_func: Optional[Any] = ...): ...

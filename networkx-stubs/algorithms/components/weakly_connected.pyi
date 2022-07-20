@@ -6,9 +6,18 @@ from typing import Any, Iterable, TypeVar, Set
 
 from networkx.classes.graph import Graph
 
-T = TypeVar("T")
-GT = TypeVar("GT", bound=Graph)
-def weakly_connected_components(G: GT[T]) -> Iterable[Set[T]]: ...
+_T = TypeVar("_T")
+_GT = TypeVar("_GT", bound=Graph)
+
+# TypeVars can't themselves take type parameters.
+# e.g.
+#
+#     _GT[_T]
+# > error: Type variable "_GT" used with arguments
+#
+# See https://github.com/python/mypy/issues/8278
+
+def weakly_connected_components(G: Any) -> Iterable[Set[_T]]: ...
 def number_weakly_connected_components(G: Any): ...
-def weakly_connected_component_subgraphs(G: GT[T], copy: bool = ...) -> Iterable[GT[T]]: ...
+def weakly_connected_component_subgraphs(G: Any, copy: bool = ...) -> Iterable[Any]: ...
 def is_weakly_connected(G: Any): ...
