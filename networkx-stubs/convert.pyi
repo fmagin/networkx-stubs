@@ -3,14 +3,14 @@ from typing_extensions import TypeAlias
 
 from networkx.classes.graph import EdgePlus, Graph, Node
 
-# import numpy
-# import scipy
+import numpy  # type: ignore
+import scipy  # type: ignore
 
 Data = Union[
     Graph[Node],
     Dict[Node, Dict[Node, Dict[str, Any]]],
     Dict[Node, Iterable[Node]],
     Iterable[EdgePlus[Node]],
-    # numpy.ndarray,
-    # scipy.sparse.base.spmatrix,
+    numpy.ndarray,
+    scipy.sparse.base.spmatrix,
 ]
