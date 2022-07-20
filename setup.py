@@ -25,6 +25,8 @@ def find_stub_files():
 test_requirements = [
     'mypy',
     'types-setuptools',
+    'pytest',
+    'pytest-mypy-plugins',
 ]
 
 extras_require = {
