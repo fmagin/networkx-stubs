@@ -1,6 +1,7 @@
-from typing import Generic, Iterator, Dict, Any
-from networkx.classes.graph import Graph, Node
+from typing import Any, Generic, Iterator
+
 from networkx.classes.coreviews import AdjacencyView
+from networkx.classes.graph import Graph, Node
 from networkx.classes.reportviews import (
     InDegreeView,
     InEdgeView,
@@ -9,9 +10,10 @@ from networkx.classes.reportviews import (
     OutEdgeView,
     OutMultiDegreeView,
 )
+
 class DiGraph(Graph[Node], Generic[Node]):
-    succ: AdjacencyView[Node, Node, Dict[str, Any]]
-    pred: AdjacencyView[Node, Node, Dict[str, Any]]
+    succ: AdjacencyView[Node, Node, dict[str, Any]]
+    pred: AdjacencyView[Node, Node, dict[str, Any]]
     def has_successor(self, u: Node, v: Node) -> bool: ...
     def has_predecessor(self, u: Node, v: Node) -> bool: ...
     def successors(self, n: Node) -> Iterator[Node]: ...

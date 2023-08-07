@@ -6,6 +6,7 @@ from typing import Any, TypeVar
 
 from networkx.classes.digraph import DiGraph
 
-T = TypeVar('T')
+T = TypeVar("T")
+
 def complement(G: Any): ...
 def reverse(G: DiGraph[T], copy: bool = ...) -> DiGraph[T]: ...
