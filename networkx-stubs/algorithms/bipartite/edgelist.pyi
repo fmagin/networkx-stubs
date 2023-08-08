@@ -15,7 +15,7 @@ def parse_edgelist(
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
     data: bool = ...,
-): ...
+) -> Any: ...
 def read_edgelist(
     path: Any,
     comments: str = ...,
@@ -25,4 +25,4 @@ def read_edgelist(
     data: bool = ...,
     edgetype: Any | None = ...,
     encoding: str = ...,
-): ...
+) -> Any: ...

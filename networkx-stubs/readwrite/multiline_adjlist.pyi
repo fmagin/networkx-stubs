@@ -13,7 +13,7 @@ def parse_multiline_adjlist(
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
     edgetype: Any | None = ...,
-): ...
+) -> Any: ...
 def read_multiline_adjlist(
     path: Any,
     comments: str = ...,
@@ -22,4 +22,4 @@ def read_multiline_adjlist(
     nodetype: Any | None = ...,
     edgetype: Any | None = ...,
     encoding: str = ...,
-): ...
+) -> Any: ...

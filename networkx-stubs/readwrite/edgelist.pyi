@@ -15,7 +15,7 @@ def parse_edgelist(
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
     data: bool = ...,
-): ...
+) -> Any: ...
 def read_edgelist(
     path: Any,
     comments: str = ...,
@@ -25,7 +25,7 @@ def read_edgelist(
     data: bool = ...,
     edgetype: Any | None = ...,
     encoding: str = ...,
-): ...
+) -> Any: ...
 def write_weighted_edgelist(G: Any, path: Any, comments: str = ..., delimiter: str = ..., encoding: str = ...) -> None: ...
 def read_weighted_edgelist(
     path: Any,
@@ -34,4 +34,4 @@ def read_weighted_edgelist(
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
     encoding: str = ...,
-): ...
+) -> Any: ...

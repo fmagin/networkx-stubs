@@ -17,7 +17,7 @@ def graph_edit_distance(
     edge_del_cost: Any | None = ...,
     edge_ins_cost: Any | None = ...,
     upper_bound: Any | None = ...,
-): ...
+) -> Any: ...
 def optimal_edit_paths(
     G1: Any,
     G2: Any,
@@ -30,7 +30,7 @@ def optimal_edit_paths(
     edge_del_cost: Any | None = ...,
     edge_ins_cost: Any | None = ...,
     upper_bound: Any | None = ...,
-): ...
+) -> Any: ...
 def optimize_graph_edit_distance(
     G1: Any,
     G2: Any,
@@ -57,4 +57,4 @@ def optimize_edit_paths(
     edge_ins_cost: Any | None = ...,
     upper_bound: Any | None = ...,
     strictly_decreasing: bool = ...,
-): ...
+) -> Any: ...
