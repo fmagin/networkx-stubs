@@ -5,7 +5,11 @@
 from networkx.classes.digraph import DiGraph
 from networkx.classes.graph import Node
 from networkx.classes.multigraph import MultiGraph
-from networkx.classes.reportviews import InMultiDegreeView, MultiDegreeView, OutMultiDegreeView
+from networkx.classes.reportviews import (
+    InMultiDegreeView,
+    MultiDegreeView,
+    OutMultiDegreeView,
+)
 
 class MultiDiGraph(MultiGraph[Node], DiGraph[Node]):
     degree: MultiDegreeView[Node]

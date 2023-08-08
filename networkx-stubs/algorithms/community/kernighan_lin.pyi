@@ -5,5 +5,9 @@
 from typing import Any
 
 def kernighan_lin_bisection(
-    G: Any, partition: Any | None = ..., max_iter: int = ..., weight: str = ..., seed: Any | None = ...
+    G: Any,
+    partition: Any | None = ...,
+    max_iter: int = ...,
+    weight: str = ...,
+    seed: Any | None = ...,
 ) -> Any: ...

@@ -6,6 +6,8 @@ from typing import Any
 
 from networkx.algorithms.centrality.flow_matrix import *
 
-def current_flow_closeness_centrality(G: Any, weight: Any | None = ..., dtype: Any = ..., solver: str = ...) -> Any: ...
+def current_flow_closeness_centrality(
+    G: Any, weight: Any | None = ..., dtype: Any = ..., solver: str = ...
+) -> Any: ...
 
 information_centrality = current_flow_closeness_centrality

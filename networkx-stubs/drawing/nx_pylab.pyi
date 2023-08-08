@@ -5,7 +5,13 @@
 from typing import Any
 
 def draw(G: Any, pos: Any | None = ..., ax: Any | None = ..., **kwds: Any) -> None: ...
-def draw_networkx(G: Any, pos: Any | None = ..., arrows: bool = ..., with_labels: bool = ..., **kwds: Any) -> None: ...
+def draw_networkx(
+    G: Any,
+    pos: Any | None = ...,
+    arrows: bool = ...,
+    with_labels: bool = ...,
+    **kwds: Any,
+) -> None: ...
 def draw_networkx_nodes(
     G: Any,
     pos: Any,

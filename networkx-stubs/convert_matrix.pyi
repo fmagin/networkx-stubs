@@ -17,12 +17,23 @@ def to_pandas_adjacency(
     weight: str = ...,
     nonedge: float = ...,
 ) -> pandas.DataFrame: ...
-def from_pandas_adjacency(df: pandas.DataFrame, create_using: type[_G] = Graph) -> _G: ...
+def from_pandas_adjacency(
+    df: pandas.DataFrame, create_using: type[_G] = Graph
+) -> _G: ...
 def to_pandas_edgelist(
-    G: Graph[_T], source: str | int = ..., target: str | int = ..., nodelist: list[_T] | None = ..., dtype: pandas.core.dtypes.base.ExtensionDtype | None = ..., edge_key: str | int | None = ...
+    G: Graph[_T],
+    source: str | int = ...,
+    target: str | int = ...,
+    nodelist: list[_T] | None = ...,
+    dtype: pandas.core.dtypes.base.ExtensionDtype | None = ...,
+    edge_key: str | int | None = ...,
 ) -> pandas.DataFrame: ...
 def from_pandas_edgelist(
-    df: pandas.DataFrame, source: str | int = ..., target: str | int = ..., edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ..., create_using: type[_G] = Graph
+    df: pandas.DataFrame,
+    source: str | int = ...,
+    target: str | int = ...,
+    edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ...,
+    create_using: type[_G] = Graph,
 ) -> _G: ...
 def to_numpy_array(
     G: Graph[_T],
@@ -33,4 +44,8 @@ def to_numpy_array(
     weight: str = ...,
     nonedge: float = ...,
 ) -> numpy.ndarray[Any, numpy.dtype[Any]]: ...
-def from_numpy_array(A: numpy.ndarray[Any, Any], parallel_edges: bool = ..., create_using: type[_G] = Graph) -> _G: ...
+def from_numpy_array(
+    A: numpy.ndarray[Any, Any],
+    parallel_edges: bool = ...,
+    create_using: type[_G] = Graph,
+) -> _G: ...

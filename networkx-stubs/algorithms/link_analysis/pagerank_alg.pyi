@@ -23,7 +23,11 @@ def google_matrix(
     dangling: Any | None = ...,
 ) -> Any: ...
 def pagerank_numpy(
-    G: Any, alpha: float = ..., personalization: Any | None = ..., weight: str = ..., dangling: Any | None = ...
+    G: Any,
+    alpha: float = ...,
+    personalization: Any | None = ...,
+    weight: str = ...,
+    dangling: Any | None = ...,
 ) -> Any: ...
 def pagerank_scipy(
     G: Any,

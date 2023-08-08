@@ -5,7 +5,12 @@
 from typing import Any
 
 def write_edgelist(
-    G: Any, path: Any, comments: str = ..., delimiter: str = ..., data: bool = ..., encoding: str = ...
+    G: Any,
+    path: Any,
+    comments: str = ...,
+    delimiter: str = ...,
+    data: bool = ...,
+    encoding: str = ...,
 ) -> None: ...
 def generate_edgelist(G: Any, delimiter: str = ..., data: bool = ...) -> None: ...
 def parse_edgelist(

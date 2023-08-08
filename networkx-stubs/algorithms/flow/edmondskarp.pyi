@@ -7,5 +7,11 @@ from typing import Any
 from networkx.algorithms.flow.utils import *
 
 def edmonds_karp(
-    G: Any, s: Any, t: Any, capacity: str = ..., residual: Any | None = ..., value_only: bool = ..., cutoff: Any | None = ...
+    G: Any,
+    s: Any,
+    t: Any,
+    capacity: str = ...,
+    residual: Any | None = ...,
+    value_only: bool = ...,
+    cutoff: Any | None = ...,
 ) -> Any: ...

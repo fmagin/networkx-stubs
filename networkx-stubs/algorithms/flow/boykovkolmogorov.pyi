@@ -5,5 +5,11 @@
 from typing import Any
 
 def boykov_kolmogorov(
-    G: Any, s: Any, t: Any, capacity: str = ..., residual: Any | None = ..., value_only: bool = ..., cutoff: Any | None = ...
+    G: Any,
+    s: Any,
+    t: Any,
+    capacity: str = ...,
+    residual: Any | None = ...,
+    value_only: bool = ...,
+    cutoff: Any | None = ...,
 ) -> Any: ...

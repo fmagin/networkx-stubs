@@ -5,9 +5,24 @@
 from typing import Any
 
 def betweenness_centrality(
-    G: Any, k: Any | None = ..., normalized: bool = ..., weight: Any | None = ..., endpoints: bool = ..., seed: Any | None = ...
+    G: Any,
+    k: Any | None = ...,
+    normalized: bool = ...,
+    weight: Any | None = ...,
+    endpoints: bool = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
 def edge_betweenness_centrality(
-    G: Any, k: Any | None = ..., normalized: bool = ..., weight: Any | None = ..., seed: Any | None = ...
+    G: Any,
+    k: Any | None = ...,
+    normalized: bool = ...,
+    weight: Any | None = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
-def edge_betweenness(G: Any, k: Any | None = ..., normalized: bool = ..., weight: Any | None = ..., seed: Any | None = ...) -> Any: ...
+def edge_betweenness(
+    G: Any,
+    k: Any | None = ...,
+    normalized: bool = ...,
+    weight: Any | None = ...,
+    seed: Any | None = ...,
+) -> Any: ...

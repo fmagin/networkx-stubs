@@ -4,4 +4,9 @@
 
 from typing import Any
 
-def closeness_vitality(G: Any, node: Any | None = ..., weight: Any | None = ..., wiener_index: Any | None = ...) -> Any: ...
+def closeness_vitality(
+    G: Any,
+    node: Any | None = ...,
+    weight: Any | None = ...,
+    wiener_index: Any | None = ...,
+) -> Any: ...

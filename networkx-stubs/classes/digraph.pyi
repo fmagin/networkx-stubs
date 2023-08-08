@@ -19,8 +19,12 @@ class DiGraph(Graph[Node], Generic[Node]):
     def successors(self, n: Node) -> Iterator[Node]: ...
     def predecessors(self, n: Node) -> Iterator[Node]: ...
     in_edges: InEdgeView[Node]
-    in_degree: InDegreeView[Node] | InMultiDegreeView[Node]  # ugly hack to make MultiDiGraph work
+    in_degree: InDegreeView[Node] | InMultiDegreeView[
+        Node
+    ]  # ugly hack to make MultiDiGraph work
     out_edges: OutEdgeView[Node]
-    out_degree: OutDegreeView[Node] | OutMultiDegreeView[Node]  # ugly hack to make MultiDiGraph work
+    out_degree: OutDegreeView[Node] | OutMultiDegreeView[
+        Node
+    ]  # ugly hack to make MultiDiGraph work
     def reverse(self, copy: bool = ...) -> DiGraph[Node]: ...
     def copy(self, as_view: bool = ...) -> DiGraph[Node]: ...

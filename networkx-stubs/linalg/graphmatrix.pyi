@@ -5,7 +5,11 @@
 from typing import Any
 
 def incidence_matrix(
-    G: Any, nodelist: Any | None = ..., edgelist: Any | None = ..., oriented: bool = ..., weight: Any | None = ...
+    G: Any,
+    nodelist: Any | None = ...,
+    edgelist: Any | None = ...,
+    oriented: bool = ...,
+    weight: Any | None = ...,
 ) -> Any: ...
 def adjacency_matrix(G: Any, nodelist: Any | None = ..., weight: str = ...) -> Any: ...
 

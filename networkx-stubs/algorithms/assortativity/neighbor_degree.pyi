@@ -4,4 +4,10 @@
 
 from typing import Any
 
-def average_neighbor_degree(G: Any, source: str = ..., target: str = ..., nodes: Any | None = ..., weight: Any | None = ...) -> Any: ...
+def average_neighbor_degree(
+    G: Any,
+    source: str = ...,
+    target: str = ...,
+    nodes: Any | None = ...,
+    weight: Any | None = ...,
+) -> Any: ...

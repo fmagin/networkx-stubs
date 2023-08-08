@@ -6,7 +6,12 @@ from typing import Any
 
 def generate_edgelist(G: Any, delimiter: str = ..., data: bool = ...) -> None: ...
 def write_edgelist(
-    G: Any, path: Any, comments: str = ..., delimiter: str = ..., data: bool = ..., encoding: str = ...
+    G: Any,
+    path: Any,
+    comments: str = ...,
+    delimiter: str = ...,
+    data: bool = ...,
+    encoding: str = ...,
 ) -> None: ...
 def parse_edgelist(
     lines: Any,
@@ -26,7 +31,9 @@ def read_edgelist(
     edgetype: Any | None = ...,
     encoding: str = ...,
 ) -> Any: ...
-def write_weighted_edgelist(G: Any, path: Any, comments: str = ..., delimiter: str = ..., encoding: str = ...) -> None: ...
+def write_weighted_edgelist(
+    G: Any, path: Any, comments: str = ..., delimiter: str = ..., encoding: str = ...
+) -> None: ...
 def read_weighted_edgelist(
     path: Any,
     comments: str = ...,

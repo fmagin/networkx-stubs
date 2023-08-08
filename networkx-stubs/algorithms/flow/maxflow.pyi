@@ -4,7 +4,35 @@
 
 from typing import Any
 
-def maximum_flow(flowG: Any, _s: Any, _t: Any, capacity: str = ..., flow_func: Any | None = ..., **kwargs: Any) -> Any: ...
-def maximum_flow_value(flowG: Any, _s: Any, _t: Any, capacity: str = ..., flow_func: Any | None = ..., **kwargs: Any) -> Any: ...
-def minimum_cut(flowG: Any, _s: Any, _t: Any, capacity: str = ..., flow_func: Any | None = ..., **kwargs: Any) -> Any: ...
-def minimum_cut_value(flowG: Any, _s: Any, _t: Any, capacity: str = ..., flow_func: Any | None = ..., **kwargs: Any) -> Any: ...
+def maximum_flow(
+    flowG: Any,
+    _s: Any,
+    _t: Any,
+    capacity: str = ...,
+    flow_func: Any | None = ...,
+    **kwargs: Any
+) -> Any: ...
+def maximum_flow_value(
+    flowG: Any,
+    _s: Any,
+    _t: Any,
+    capacity: str = ...,
+    flow_func: Any | None = ...,
+    **kwargs: Any
+) -> Any: ...
+def minimum_cut(
+    flowG: Any,
+    _s: Any,
+    _t: Any,
+    capacity: str = ...,
+    flow_func: Any | None = ...,
+    **kwargs: Any
+) -> Any: ...
+def minimum_cut_value(
+    flowG: Any,
+    _s: Any,
+    _t: Any,
+    capacity: str = ...,
+    flow_func: Any | None = ...,
+    **kwargs: Any
+) -> Any: ...

@@ -5,5 +5,9 @@
 from typing import Any
 
 def average_degree_connectivity(
-    G: Any, source: str = ..., target: str = ..., nodes: Any | None = ..., weight: Any | None = ...
+    G: Any,
+    source: str = ...,
+    target: str = ...,
+    nodes: Any | None = ...,
+    weight: Any | None = ...,
 ) -> None: ...

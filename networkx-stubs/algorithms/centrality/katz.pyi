@@ -14,4 +14,10 @@ def katz_centrality(
     normalized: bool = ...,
     weight: Any | None = ...,
 ) -> Any: ...
-def katz_centrality_numpy(G: Any, alpha: float = ..., beta: float = ..., normalized: bool = ..., weight: Any | None = ...) -> Any: ...
+def katz_centrality_numpy(
+    G: Any,
+    alpha: float = ...,
+    beta: float = ...,
+    normalized: bool = ...,
+    weight: Any | None = ...,
+) -> Any: ...

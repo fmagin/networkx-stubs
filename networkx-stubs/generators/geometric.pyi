@@ -4,9 +4,22 @@
 
 from typing import Any
 
-def random_geometric_graph(n: Any, radius: Any, dim: int = ..., pos: Any | None = ..., p: int = ..., seed: Any | None = ...) -> Any: ...
+def random_geometric_graph(
+    n: Any,
+    radius: Any,
+    dim: int = ...,
+    pos: Any | None = ...,
+    p: int = ...,
+    seed: Any | None = ...,
+) -> Any: ...
 def soft_random_geometric_graph(
-    n: Any, radius: Any, dim: int = ..., pos: Any | None = ..., p: int = ..., p_dist: Any | None = ..., seed: Any | None = ...
+    n: Any,
+    radius: Any,
+    dim: int = ...,
+    pos: Any | None = ...,
+    p: int = ...,
+    p_dist: Any | None = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
 def geographical_threshold_graph(
     n: Any,
@@ -27,7 +40,14 @@ def waxman_graph(
     metric: Any | None = ...,
     seed: Any | None = ...,
 ) -> Any: ...
-def navigable_small_world_graph(n: Any, p: int = ..., q: int = ..., r: int = ..., dim: int = ..., seed: Any | None = ...) -> Any: ...
+def navigable_small_world_graph(
+    n: Any,
+    p: int = ...,
+    q: int = ...,
+    r: int = ...,
+    dim: int = ...,
+    seed: Any | None = ...,
+) -> Any: ...
 def thresholded_random_geometric_graph(
     n: Any,
     radius: Any,

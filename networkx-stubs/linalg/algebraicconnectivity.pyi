@@ -21,12 +21,27 @@ class _LUSolver:
     def solve(self, B: Any, tol: Any | None = ...) -> Any: ...
 
 def algebraic_connectivity(
-    G: Any, weight: str = ..., normalized: bool = ..., tol: float = ..., method: str = ..., seed: Any | None = ...
+    G: Any,
+    weight: str = ...,
+    normalized: bool = ...,
+    tol: float = ...,
+    method: str = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
 def fiedler_vector(
-    G: Any, weight: str = ..., normalized: bool = ..., tol: float = ..., method: str = ..., seed: Any | None = ...
+    G: Any,
+    weight: str = ...,
+    normalized: bool = ...,
+    tol: float = ...,
+    method: str = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
 def spectral_ordering(
-    G: Any, weight: str = ..., normalized: bool = ..., tol: float = ..., method: str = ..., seed: Any | None = ...
+    G: Any,
+    weight: str = ...,
+    normalized: bool = ...,
+    tol: float = ...,
+    method: str = ...,
+    seed: Any | None = ...,
 ) -> Any: ...
 def setup_module(module: Any) -> None: ...
