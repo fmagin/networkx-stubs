@@ -1,20 +1,20 @@
-from typing import Any, overload, Callable
+from typing import Any, overload
 from typing_extensions import Literal
-from collections.abc import Iterable
+from collections.abc import Iterable, Callable
 
-from networkx.classes.graph import Graph, Node
+from networkx.classes.graph import Graph, _Node
 
-def bridges(G: Graph[Node], root: Node | None = ...) -> Iterable[Node]: ...
-def has_bridges(G: Graph[Node], root: Any | None = ...) -> bool: ...
+def bridges(G: Graph[_Node], root: _Node | None = ...) -> Iterable[_Node]: ...
+def has_bridges(G: Graph[_Node], root: Any | None = ...) -> bool: ...
 @overload
 def local_bridges(
-    G: Graph[Node],
+    G: Graph[_Node],
     with_span: Literal[False] = False,
-    weight: str | Callable[[Node], int | float] | None = ...,
-) -> Iterable[tuple[Node, Node]]: ...
+    weight: str | Callable[[_Node], float] | None = ...,
+) -> Iterable[tuple[_Node, _Node]]: ...
 @overload
 def local_bridges(
-    G: Graph[Node],
+    G: Graph[_Node],
     with_span: Literal[True] = True,
-    weight: str | Callable[[Node], int | float] | None = ...,
-) -> Iterable[tuple[Node, Node, int]]: ...
+    weight: str | Callable[[_Node], float] | None = ...,
+) -> Iterable[tuple[_Node, _Node, int]]: ...

@@ -1,7 +1,8 @@
-from typing import Any, Generic, Iterator
+from typing import Any, Generic
+from collections.abc import Iterator
 
 from networkx.classes.coreviews import AdjacencyView
-from networkx.classes.graph import Graph, Node
+from networkx.classes.graph import Graph, _Node
 from networkx.classes.reportviews import (
     InDegreeView,
     InEdgeView,
@@ -11,20 +12,20 @@ from networkx.classes.reportviews import (
     OutMultiDegreeView,
 )
 
-class DiGraph(Graph[Node], Generic[Node]):
-    succ: AdjacencyView[Node, Node, dict[str, Any]]
-    pred: AdjacencyView[Node, Node, dict[str, Any]]
-    def has_successor(self, u: Node, v: Node) -> bool: ...
-    def has_predecessor(self, u: Node, v: Node) -> bool: ...
-    def successors(self, n: Node) -> Iterator[Node]: ...
-    def predecessors(self, n: Node) -> Iterator[Node]: ...
-    in_edges: InEdgeView[Node]
-    in_degree: InDegreeView[Node] | InMultiDegreeView[
-        Node
+class DiGraph(Graph[_Node], Generic[_Node]):
+    succ: AdjacencyView[_Node, _Node, dict[str, Any]]
+    pred: AdjacencyView[_Node, _Node, dict[str, Any]]
+    def has_successor(self, u: _Node, v: _Node) -> bool: ...
+    def has_predecessor(self, u: _Node, v: _Node) -> bool: ...
+    def successors(self, n: _Node) -> Iterator[_Node]: ...
+    def predecessors(self, n: _Node) -> Iterator[_Node]: ...
+    in_edges: InEdgeView[_Node]
+    in_degree: InDegreeView[_Node] | InMultiDegreeView[
+        _Node
     ]  # ugly hack to make MultiDiGraph work
-    out_edges: OutEdgeView[Node]
-    out_degree: OutDegreeView[Node] | OutMultiDegreeView[
-        Node
+    out_edges: OutEdgeView[_Node]
+    out_degree: OutDegreeView[_Node] | OutMultiDegreeView[
+        _Node
     ]  # ugly hack to make MultiDiGraph work
-    def reverse(self, copy: bool = ...) -> DiGraph[Node]: ...
-    def copy(self, as_view: bool = ...) -> DiGraph[Node]: ...
+    def reverse(self, copy: bool = ...) -> DiGraph[_Node]: ...
+    def copy(self, as_view: bool = ...) -> DiGraph[_Node]: ...

@@ -1,5 +1,6 @@
-from typing import Any, TypeVar, Mapping, overload
+from typing import Any, TypeVar, overload
 from typing_extensions import Literal
+from collections.abc import Mapping
 
 from networkx.classes.graph import Graph
 from networkx.classes.digraph import DiGraph

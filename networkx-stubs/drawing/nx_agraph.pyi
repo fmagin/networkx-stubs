@@ -1,5 +1,6 @@
-from typing import Any, TypeVar, Callable
+from typing import Any, TypeVar
 from io import TextIOBase
+from collections.abc import Callable
 
 import pygraphviz
 from networkx.classes.graph import Graph
