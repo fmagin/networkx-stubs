@@ -1,4 +1,6 @@
-from typing import Any, Generic, Iterator, Literal, overload, TypeVar
+from typing import Any, Generic, overload, TypeVar
+from collections.abc import Iterator
+from typing_extensions import Literal
 
 from networkx.classes.graph import Edge, Graph, NBunch, Node
 

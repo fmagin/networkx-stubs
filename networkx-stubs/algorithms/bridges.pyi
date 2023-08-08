@@ -1,4 +1,5 @@
-from typing import Any, Literal, overload, Callable
+from typing import Any, overload, Callable
+from typing_extensions import Literal
 from collections.abc import Iterable
 
 from networkx.classes.graph import Graph, Node
