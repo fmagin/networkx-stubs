@@ -2,13 +2,14 @@ from typing import Any, TypeVar
 from io import TextIOBase
 from collections.abc import Callable
 
-import pygraphviz
+#from pygraphviz.agraph import AGraph
+AGraph = Any
 from networkx.classes.graph import Graph
 
 _T = TypeVar("_T")
 
 def from_agraph(A: Any, create_using: Any | None = ...) -> Graph[Any]: ...
-def to_agraph(N: Graph[Any]) -> pygraphviz.agraph.AGraph: ...
+def to_agraph(N: Graph[Any]) -> AGraph: ...
 def write_dot(G: Graph[Any], path: str | TextIOBase) -> None: ...
 def read_dot(path: str | TextIOBase) -> Graph[Any]: ...
 def graphviz_layout(

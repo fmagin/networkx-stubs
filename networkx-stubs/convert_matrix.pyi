@@ -8,7 +8,10 @@ from networkx.classes.multigraph import MultiGraph
 from networkx.classes.multidigraph import MultiDiGraph
 
 import numpy
-import pandas.core.dtypes.base
+#from pandas import DataFrame
+#from pandas.core.dtypes.base import ExtensionDtype 
+DataFrame = Any
+ExtensionDtype = Any
 
 def to_pandas_adjacency(
     G: Graph[_Node],
@@ -18,34 +21,34 @@ def to_pandas_adjacency(
     multigraph_weight: Callable[[Iterable[float]], float] = ...,
     weight: str = ...,
     nonedge: float = ...,
-) -> pandas.DataFrame: ...
+) -> DataFrame: ...
 @overload
 def from_pandas_adjacency(
-    df: pandas.DataFrame, create_using: type[Graph[Any]] = ...
+    df: DataFrame, create_using: type[Graph[Any]] = ...
 ) -> Graph[Any]: ...
 @overload
 def from_pandas_adjacency(
-    df: pandas.DataFrame, create_using: type[DiGraph[Any]] = ...
+    df: DataFrame, create_using: type[DiGraph[Any]] = ...
 ) -> DiGraph[Any]: ...
 @overload
 def from_pandas_adjacency(
-    df: pandas.DataFrame, create_using: type[MultiGraph[Any]] = ...
+    df: DataFrame, create_using: type[MultiGraph[Any]] = ...
 ) -> MultiGraph[Any]: ...
 @overload
 def from_pandas_adjacency(
-    df: pandas.DataFrame, create_using: type[MultiDiGraph[Any]] = ...
+    df: DataFrame, create_using: type[MultiDiGraph[Any]] = ...
 ) -> MultiDiGraph[Any]: ...
 def to_pandas_edgelist(
     G: Graph[_Node],
     source: str | int = ...,
     target: str | int = ...,
     nodelist: list[_Node] | None = ...,
-    dtype: pandas.core.dtypes.base.ExtensionDtype | None = ...,
+    dtype: ExtensionDtype | None = ...,
     edge_key: str | int | None = ...,
-) -> pandas.DataFrame: ...
+) -> DataFrame: ...
 @overload
 def from_pandas_edgelist(
-    df: pandas.DataFrame,
+    df: DataFrame,
     source: str | int = ...,
     target: str | int = ...,
     edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ...,
@@ -53,7 +56,7 @@ def from_pandas_edgelist(
 ) -> Graph[Any]: ...
 @overload
 def from_pandas_edgelist(
-    df: pandas.DataFrame,
+    df: DataFrame,
     source: str | int = ...,
     target: str | int = ...,
     edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ...,
@@ -61,7 +64,7 @@ def from_pandas_edgelist(
 ) -> DiGraph[Any]: ...
 @overload
 def from_pandas_edgelist(
-    df: pandas.DataFrame,
+    df: DataFrame,
     source: str | int = ...,
     target: str | int = ...,
     edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ...,
@@ -69,7 +72,7 @@ def from_pandas_edgelist(
 ) -> MultiGraph[Any]: ...
 @overload
 def from_pandas_edgelist(
-    df: pandas.DataFrame,
+    df: DataFrame,
     source: str | int = ...,
     target: str | int = ...,
     edge_attr: str | int | Iterable[str | int] | Literal[True] | None = ...,
