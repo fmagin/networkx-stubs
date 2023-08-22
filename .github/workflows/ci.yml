@@ -35,4 +35,4 @@ jobs:
     - name: Deps
       run: 'pip install -e .[test]'
     - name: Tests
-      run: 'black --check network-stubs'
+      run: 'black --check networkx-stubs'
