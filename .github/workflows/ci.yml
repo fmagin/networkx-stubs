@@ -1,0 +1,40 @@
+name: CI
+on:
+  - push
+  - pull_request
+jobs:
+  pyright:
+    name: Pyright
+      #if: always()
+      #strategy:
+      #  matrix:
+      #    python:
+      #      - version: '3.11'
+      #        env: 'py311'
+    runs-on: ubuntu-latest
+      #env:
+      #  PYTHON: ${{ matrix.python.version }}
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup python
+      uses: actions/setup-python@main
+      #with:
+        #python-version: ${{ matrix.python.version }}
+    - name: Deps
+      run: 'pip install -e . pyright'
+    - name: Tests
+      run: 'pyright -p pyrightconfig.stricter.json --pythonversion 3.7 networkx-stubs'
+  flake8:
+    name: Flake8
+      #if: always()
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup python
+      uses: actions/setup-python@main
+        #with:
+        #  python-version: '3.11'
+    - name: Deps
+      run: 'pip install -e . flake8'
+    - name: Tests
+      run: 'flake8 networkx-stubs'
