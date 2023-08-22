@@ -22,6 +22,10 @@ def find_stub_files():
                 result.append(file)
     return result
 
+requirements = [
+    'numpy',
+]
+
 test_requirements = [
     'mypy',
     'flake8',
@@ -42,4 +46,5 @@ setup(
     extras_require=extras_require,
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*',
     tests_require=test_requirements,
+    install_requires=requirements,
 )
