@@ -30,6 +30,7 @@ test_requirements = [
     'mypy',
     'flake8',
     'pyright',
+    'black',
 ]
 
 extras_require = {

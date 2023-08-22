@@ -2,7 +2,7 @@ from typing import Any, TypeVar
 from io import TextIOBase
 from collections.abc import Callable
 
-#from pygraphviz.agraph import AGraph
+# from pygraphviz.agraph import AGraph
 AGraph = Any
 from networkx.classes.graph import Graph
 

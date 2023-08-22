@@ -8,8 +8,9 @@ from networkx.classes.multigraph import MultiGraph
 from networkx.classes.multidigraph import MultiDiGraph
 
 import numpy
-#from pandas import DataFrame
-#from pandas.core.dtypes.base import ExtensionDtype 
+
+# from pandas import DataFrame
+# from pandas.core.dtypes.base import ExtensionDtype
 DataFrame = Any
 ExtensionDtype = Any
 
