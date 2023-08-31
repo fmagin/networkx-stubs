@@ -7,7 +7,7 @@ import numpy
 # import scipy
 from networkx.classes.graph import EdgePlus, Graph, _Node
 
-Data: TypeAlias = (
+_Data: TypeAlias = (
     Graph[_Node]
     | dict[_Node, dict[_Node, dict[str, Any]]]
     | dict[_Node, Iterable[_Node]]

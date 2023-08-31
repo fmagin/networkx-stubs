@@ -21,7 +21,7 @@ from _typeshed import Self
 from networkx.classes.coreviews import AdjacencyView
 from networkx.classes.digraph import DiGraph
 from networkx.classes.reportviews import DiDegreeView, NodeView, OutEdgeView
-from networkx.convert import Data
+from networkx.convert import _Data
 
 _Node = TypeVar("_Node", bound=Hashable)
 Edge: TypeAlias = tuple[_Node, _Node]
@@ -40,7 +40,7 @@ class Graph(Collection[_Node], Generic[_Node]):
     def to_directed_class(self) -> type[DiGraph[_Node]]: ...
     def to_undirected_class(self) -> type[Graph[_Node]]: ...
     def __init__(
-        self, incoming_graph_data: Data[_Node] | None = None, **attr: Any
+        self, incoming_graph_data: _Data[_Node] | None = None, **attr: Any
     ) -> None: ...
 
     adj: AdjacencyView[_Node, _Node, dict[str, Any]]
