@@ -1,1 +1,7 @@
-def capacity_scaling(G, demand: str = "demand", capacity: str = "capacity", weight: str = "weight", heap=...): ...
+def capacity_scaling(
+    G,
+    demand: str = "demand",
+    capacity: str = "capacity",
+    weight: str = "weight",
+    heap=...,
+): ...
