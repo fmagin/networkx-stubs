@@ -11,18 +11,18 @@ def betweenness_centrality(
     weight: Any | None = ...,
     endpoints: bool = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def edge_betweenness_centrality(
     G: Any,
     k: Any | None = ...,
     normalized: bool = ...,
     weight: Any | None = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def edge_betweenness(
     G: Any,
     k: Any | None = ...,
     normalized: bool = ...,
     weight: Any | None = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...

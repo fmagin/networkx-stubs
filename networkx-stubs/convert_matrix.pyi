@@ -9,10 +9,8 @@ from networkx.classes.multidigraph import MultiDiGraph
 
 import numpy
 
-# from pandas import DataFrame
-# from pandas.core.dtypes.base import ExtensionDtype
-DataFrame = Any
-ExtensionDtype = Any
+from pandas import DataFrame
+from pandas.core.dtypes.base import ExtensionDtype
 
 def to_pandas_adjacency(
     G: Graph[_Node],

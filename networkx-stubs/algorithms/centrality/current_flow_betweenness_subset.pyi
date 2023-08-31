@@ -14,7 +14,7 @@ def current_flow_betweenness_centrality_subset(
     weight: Any | None = ...,
     dtype: Any = ...,
     solver: str = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def edge_current_flow_betweenness_centrality_subset(
     G: Any,
     sources: Any,
@@ -23,4 +23,4 @@ def edge_current_flow_betweenness_centrality_subset(
     weight: Any | None = ...,
     dtype: Any = ...,
     solver: str = ...,
-) -> Any: ...
+) -> Incomplete: ...

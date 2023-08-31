@@ -24,6 +24,8 @@ def find_stub_files():
 
 requirements = [
     'numpy',
+    'pandas-stubs',
+    'pandas',
 ]
 
 test_requirements = [

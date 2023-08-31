@@ -15,18 +15,18 @@ def approximate_current_flow_betweenness_centrality(
     epsilon: float = ...,
     kmax: int = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def current_flow_betweenness_centrality(
     G: Any,
     normalized: bool = ...,
     weight: Any | None = ...,
     dtype: Any = ...,
     solver: str = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def edge_current_flow_betweenness_centrality(
     G: Any,
     normalized: bool = ...,
     weight: Any | None = ...,
     dtype: Any = ...,
     solver: str = ...,
-) -> Any: ...
+) -> Incomplete: ...

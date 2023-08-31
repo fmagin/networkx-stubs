@@ -13,11 +13,11 @@ def katz_centrality(
     nstart: Any | None = ...,
     normalized: bool = ...,
     weight: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def katz_centrality_numpy(
     G: Any,
     alpha: float = ...,
     beta: float = ...,
     normalized: bool = ...,
     weight: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...

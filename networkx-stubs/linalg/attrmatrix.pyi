@@ -12,7 +12,7 @@ def attr_matrix(
     rc_order: Any | None = ...,
     dtype: Any | None = ...,
     order: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def attr_sparse_matrix(
     G: Any,
     edge_attr: Any | None = ...,
@@ -20,4 +20,4 @@ def attr_sparse_matrix(
     normalized: bool = ...,
     rc_order: Any | None = ...,
     dtype: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...

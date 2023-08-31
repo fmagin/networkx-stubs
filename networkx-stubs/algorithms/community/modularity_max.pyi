@@ -4,7 +4,7 @@
 
 from typing import Any
 
-def greedy_modularity_communities(G: Any, weight: Any | None = ...) -> Any: ...
+def greedy_modularity_communities(G: Any, weight: Any | None = ...) -> Incomplete: ...
 
 # Names in __all__ with no definition:
 #   _naive_greedy_modularity_communities

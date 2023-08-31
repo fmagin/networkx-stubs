@@ -14,7 +14,7 @@ def parse_adjlist(
     delimiter: Any | None = ...,
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def read_adjlist(
     path: Any,
     comments: str = ...,
@@ -22,4 +22,4 @@ def read_adjlist(
     create_using: Any | None = ...,
     nodetype: Any | None = ...,
     encoding: str = ...,
-) -> Any: ...
+) -> Incomplete: ...

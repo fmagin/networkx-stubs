@@ -11,7 +11,7 @@ def random_geometric_graph(
     pos: Any | None = ...,
     p: int = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def soft_random_geometric_graph(
     n: Any,
     radius: Any,
@@ -20,7 +20,7 @@ def soft_random_geometric_graph(
     p: int = ...,
     p_dist: Any | None = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def geographical_threshold_graph(
     n: Any,
     theta: Any,
@@ -30,7 +30,7 @@ def geographical_threshold_graph(
     metric: Any | None = ...,
     p_dist: Any | None = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def waxman_graph(
     n: Any,
     beta: float = ...,
@@ -39,7 +39,7 @@ def waxman_graph(
     domain: Any = ...,
     metric: Any | None = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def navigable_small_world_graph(
     n: Any,
     p: int = ...,
@@ -47,7 +47,7 @@ def navigable_small_world_graph(
     r: int = ...,
     dim: int = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def thresholded_random_geometric_graph(
     n: Any,
     radius: Any,
@@ -57,4 +57,4 @@ def thresholded_random_geometric_graph(
     weight: Any | None = ...,
     p: int = ...,
     seed: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...

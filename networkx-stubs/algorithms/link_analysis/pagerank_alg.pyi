@@ -13,7 +13,7 @@ def pagerank(
     nstart: Any | None = ...,
     weight: str = ...,
     dangling: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def google_matrix(
     G: Any,
     alpha: float = ...,
@@ -21,14 +21,14 @@ def google_matrix(
     nodelist: Any | None = ...,
     weight: str = ...,
     dangling: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def pagerank_numpy(
     G: Any,
     alpha: float = ...,
     personalization: Any | None = ...,
     weight: str = ...,
     dangling: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...
 def pagerank_scipy(
     G: Any,
     alpha: float = ...,
@@ -37,4 +37,4 @@ def pagerank_scipy(
     tol: float = ...,
     weight: str = ...,
     dangling: Any | None = ...,
-) -> Any: ...
+) -> Incomplete: ...

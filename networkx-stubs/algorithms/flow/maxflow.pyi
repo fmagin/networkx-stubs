@@ -11,7 +11,7 @@ def maximum_flow(
     capacity: str = ...,
     flow_func: Any | None = ...,
     **kwargs: Any
-) -> Any: ...
+) -> Incomplete: ...
 def maximum_flow_value(
     flowG: Any,
     _s: Any,
@@ -19,7 +19,7 @@ def maximum_flow_value(
     capacity: str = ...,
     flow_func: Any | None = ...,
     **kwargs: Any
-) -> Any: ...
+) -> Incomplete: ...
 def minimum_cut(
     flowG: Any,
     _s: Any,
@@ -27,7 +27,7 @@ def minimum_cut(
     capacity: str = ...,
     flow_func: Any | None = ...,
     **kwargs: Any
-) -> Any: ...
+) -> Incomplete: ...
 def minimum_cut_value(
     flowG: Any,
     _s: Any,
@@ -35,4 +35,4 @@ def minimum_cut_value(
     capacity: str = ...,
     flow_func: Any | None = ...,
     **kwargs: Any
-) -> Any: ...
+) -> Incomplete: ...
