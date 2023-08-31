@@ -91,7 +91,7 @@ def selfloop_edges(
 ) -> Iterable[tuple[_T, _T, dict[str, Incomplete]]]: ...
 @overload
 def selfloop_edges(
-    G: Graph[_T], data: str = ..., keys: Literal[False] = ..., default: _U = None
+    G: Graph[_T], data: str = ..., keys: Literal[False] = ..., default: _U | None = None
 ) -> Iterable[tuple[_T, _T, _U]]: ...
 @overload
 def selfloop_edges(
@@ -109,6 +109,6 @@ def selfloop_edges(
 ) -> Iterable[tuple[_T, _T, int, dict[str, Incomplete]]]: ...
 @overload
 def selfloop_edges(
-    G: Graph[_T], data: str = ..., keys: Literal[True] = True, default: _U = None
+    G: Graph[_T], data: str = ..., keys: Literal[True] = True, default: _U | None = None
 ) -> Iterable[tuple[_T, _T, int, _U]]: ...
 def number_of_selfloops(G: Graph[Any]) -> int: ...
