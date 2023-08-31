@@ -10,12 +10,12 @@ def has_bridges(G: Graph[_Node], root: Incomplete | None = ...) -> bool: ...
 @overload
 def local_bridges(
     G: Graph[_Node],
-    with_span: Literal[False] = False,
+    with_span: Literal[False] = ...,
     weight: str | Callable[[_Node], float] | None = ...,
 ) -> Iterable[tuple[_Node, _Node]]: ...
 @overload
 def local_bridges(
     G: Graph[_Node],
-    with_span: Literal[True] = True,
+    with_span: Literal[True] = ...,
     weight: str | Callable[[_Node], float] | None = ...,
 ) -> Iterable[tuple[_Node, _Node, int]]: ...

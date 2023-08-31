@@ -13,8 +13,8 @@ def edge_boundary(
     G: Graph[_T],
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
-    data: Literal[False] = False,
-    keys: Literal[False] = False,
+    data: Literal[False] = ...,
+    keys: Literal[False] = ...,
     default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T]]: ...
 @overload
@@ -22,8 +22,8 @@ def edge_boundary(
     G: Graph[_T],
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
-    data: Literal[True] = True,
-    keys: Literal[False] = False,
+    data: Literal[True] = ...,
+    keys: Literal[False] = ...,
     default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T, dict[str, Incomplete]]]: ...
 @overload
@@ -32,7 +32,7 @@ def edge_boundary(
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
     data: str = ...,
-    keys: Literal[False] = False,
+    keys: Literal[False] = ...,
     default: _U | None = None,
 ) -> Iterable[tuple[_T, _T, dict[str, _U]]]: ...
 @overload
@@ -40,8 +40,8 @@ def edge_boundary(
     G: Graph[_T],
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
-    data: Literal[False] = False,
-    keys: Literal[True] = True,
+    data: Literal[False] = ...,
+    keys: Literal[True] = ...,
     default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T, int]]: ...
 @overload
@@ -49,8 +49,8 @@ def edge_boundary(
     G: Graph[_T],
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
-    data: Literal[True] = True,
-    keys: Literal[True] = True,
+    data: Literal[True] = ...,
+    keys: Literal[True] = ...,
     default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T, int, dict[str, Incomplete]]]: ...
 @overload
@@ -59,7 +59,7 @@ def edge_boundary(
     nbunch1: Iterable[_T],
     nbunch2: Iterable[_T] | None = ...,
     data: str = ...,
-    keys: Literal[True] = True,
+    keys: Literal[True] = ...,
     default: _U | None = None,
 ) -> Iterable[tuple[_T, _T, int, dict[str, _U]]]: ...
 def node_boundary(

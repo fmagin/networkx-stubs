@@ -88,7 +88,7 @@ class OutEdgeView(Generic[_Node]):
     def __call__(
         self,
         nbunch: NBunch[_Node] = ...,
-        data: Literal[True] = True,
+        data: Literal[True] = ...,
         default: Incomplete = ...,
     ) -> OutEdgeDataView[_Node, tuple[_Node, _Node, dict[str, Incomplete]]]: ...
     @overload
@@ -98,14 +98,14 @@ class OutEdgeView(Generic[_Node]):
     @overload
     def data(
         self,
-        data: Literal[False] = False,
+        data: Literal[False] = ...,
         default: Incomplete = ...,
         nbunch: NBunch[_Node] = ...,
     ) -> OutEdgeView[_Node]: ...
     @overload
     def data(
         self,
-        data: Literal[True] = True,
+        data: Literal[True] = ...,
         default: Incomplete = ...,
         nbunch: NBunch[_Node] = ...,
     ) -> OutEdgeDataView[_Node, tuple[_Node, _Node, dict[str, Incomplete]]]: ...
