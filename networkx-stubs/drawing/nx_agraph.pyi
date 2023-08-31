@@ -5,10 +5,11 @@ from typing import Any, TypeVar
 from _typeshed import Incomplete
 from typing_extensions import TypeAlias
 
-# from pygraphviz.agraph import AGraph as _AGraph
-_AGraph: TypeAlias = Incomplete
 from networkx.classes.graph import Graph
 
+# from pygraphviz.agraph import AGraph as _AGraph
+
+_AGraph: TypeAlias = Incomplete
 _T = TypeVar("_T")
 
 def from_agraph(

@@ -20,7 +20,7 @@ def bipartite_layout(
     align: str = "vertical",
     scale: int = 1,
     center: Incomplete | None = None,
-    aspect_ratio=1.3333333333333333,
+    aspect_ratio: float = ...,
 ): ...
 def spring_layout(
     G,

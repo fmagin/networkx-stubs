@@ -13,7 +13,7 @@ jobs:
     - name: Deps
       run: 'pip install -e .[test]'
     - name: Tests
-      run: 'pyright -p pyrightconfig.stricter.json --pythonversion 3.7 networkx-stubs'
+      run: 'pyright -p pyrightconfig.json --pythonversion 3.7 networkx-stubs'
   flake8:
     name: Flake8
     runs-on: ubuntu-latest

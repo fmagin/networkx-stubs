@@ -1,6 +1,7 @@
+from typing import Generic
 from _typeshed import Incomplete
 
-import networkx as nx
+from networkx.classes.multidigraph import MultiDiGraph, _Node
 
 def branching_weight(G, attr: str = "weight", default: int = 1): ...
 def greedy_branching(
@@ -11,7 +12,7 @@ def greedy_branching(
     seed: Incomplete | None = None,
 ): ...
 
-class MultiDiGraph_EdgeKey(nx.MultiDiGraph):
+class MultiDiGraph_EdgeKey(MultiDiGraph[_Node], Generic[_Node]):
     edge_index: Incomplete
     def __init__(
         self, incoming_graph_data: Incomplete | None = None, **attr
@@ -72,7 +73,7 @@ def minimum_spanning_arborescence(
 class ArborescenceIterator:
     class Partition:
         mst_weight: float
-        partition_dict: dict
+        partition_dict: dict[Incomplete, Incomplete]
         def __copy__(self): ...
         def __init__(self, mst_weight, partition_dict) -> None: ...
         def __lt__(self, other): ...
