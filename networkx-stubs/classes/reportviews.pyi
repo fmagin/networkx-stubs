@@ -1,4 +1,5 @@
 from typing import Any, Generic, overload, TypeVar
+from _typeshed import Incomplete
 from collections.abc import Iterator
 from typing_extensions import Literal
 

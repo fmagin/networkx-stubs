@@ -1,4 +1,5 @@
 from typing import Any, Generic, TypeVar
+from _typeshed import Incomplete
 from collections.abc import Iterable
 
 import networkx as nx

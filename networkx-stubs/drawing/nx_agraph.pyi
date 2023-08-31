@@ -1,4 +1,5 @@
 from typing import Any, TypeVar
+from _typeshed import Incomplete
 from io import TextIOBase
 from collections.abc import Callable
 
