@@ -7,9 +7,9 @@ from collections.abc import (
     Mapping,
     MutableMapping,
 )
-from typing import ClassVar, Generic, Incomplete, TypeVar, overload
+from typing import ClassVar, Generic, TypeVar, overload
 
-from _typeshed import Self
+from _typeshed import Self, Incomplete
 from networkx.classes.coreviews import AdjacencyView
 from networkx.classes.digraph import DiGraph
 from networkx.classes.reportviews import DiDegreeView, NodeView, OutEdgeView

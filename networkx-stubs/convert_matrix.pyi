@@ -1,5 +1,6 @@
 from collections.abc import Callable, Iterable
-from typing import Incomplete, overload
+from typing import overload
+from _typeshed import Incomplete
 
 import numpy
 from networkx.classes.digraph import DiGraph

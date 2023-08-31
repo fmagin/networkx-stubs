@@ -1,5 +1,5 @@
 from collections.abc import Mapping
-from typing import Incomplete, TypeVar, overload
+from typing import Any, TypeVar, overload
 
 from networkx.classes.digraph import DiGraph
 from networkx.classes.graph import Graph
@@ -28,7 +28,7 @@ def relabel_nodes(
 ) -> MultiDiGraph[_X | _Y]: ...
 @overload
 def convert_node_labels_to_integers(
-    G: Graph[Incomplete],
+    G: Graph[Any],
     first_label: int = ...,
     ordering: Literal[
         "default", "sorted", "increasing degree", "decreasing degree"
@@ -37,7 +37,7 @@ def convert_node_labels_to_integers(
 ) -> Graph[int]: ...
 @overload
 def convert_node_labels_to_integers(
-    G: DiGraph[Incomplete],
+    G: DiGraph[Any],
     first_label: int = ...,
     ordering: Literal[
         "default", "sorted", "increasing degree", "decreasing degree"
@@ -46,7 +46,7 @@ def convert_node_labels_to_integers(
 ) -> DiGraph[int]: ...
 @overload
 def convert_node_labels_to_integers(
-    G: MultiGraph[Incomplete],
+    G: MultiGraph[Any],
     first_label: int = ...,
     ordering: Literal[
         "default", "sorted", "increasing degree", "decreasing degree"
@@ -55,7 +55,7 @@ def convert_node_labels_to_integers(
 ) -> MultiGraph[int]: ...
 @overload
 def convert_node_labels_to_integers(
-    G: MultiDiGraph[Incomplete],
+    G: MultiDiGraph[Any],
     first_label: int = ...,
     ordering: Literal[
         "default", "sorted", "increasing degree", "decreasing degree"

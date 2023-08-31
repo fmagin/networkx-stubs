@@ -1,5 +1,6 @@
 from collections.abc import Iterable
-from typing import Incomplete, TypeVar, overload
+from typing import TypeVar, overload
+from _typeshed import Incomplete
 
 from networkx.classes.graph import Graph
 from typing_extensions import Literal

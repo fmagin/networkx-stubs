@@ -1,5 +1,5 @@
 from collections.abc import Iterator
-from typing import Generic, Incomplete, TypeVar, overload
+from typing import Generic, TypeVar, overload
 
 from _typeshed import Incomplete
 from networkx.classes.graph import Edge, Graph, NBunch, _Node

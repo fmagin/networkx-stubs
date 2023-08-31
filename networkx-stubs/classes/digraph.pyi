@@ -1,5 +1,6 @@
 from collections.abc import Iterator
-from typing import Generic, Incomplete
+from typing import Generic
+from _typeshed import Incomplete
 
 from networkx.classes.coreviews import AdjacencyView
 from networkx.classes.graph import Graph, _Node
