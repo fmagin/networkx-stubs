@@ -1,8 +1,8 @@
-from typing import Any, TypeVar, overload
-from typing_extensions import Literal
 from collections.abc import Iterable
+from typing import Incomplete, TypeVar, overload
 
 from networkx.classes.graph import Graph
+from typing_extensions import Literal
 
 _T = TypeVar("_T")
 _U = TypeVar("_U")
@@ -14,7 +14,7 @@ def edge_boundary(
     nbunch2: Iterable[_T] | None = ...,
     data: Literal[False] = False,
     keys: Literal[False] = False,
-    default: Any = ...,
+    default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T]]: ...
 @overload
 def edge_boundary(
@@ -23,8 +23,8 @@ def edge_boundary(
     nbunch2: Iterable[_T] | None = ...,
     data: Literal[True] = True,
     keys: Literal[False] = False,
-    default: Any = ...,
-) -> Iterable[tuple[_T, _T, dict[str, Any]]]: ...
+    default: Incomplete = ...,
+) -> Iterable[tuple[_T, _T, dict[str, Incomplete]]]: ...
 @overload
 def edge_boundary(
     G: Graph[_T],
@@ -41,7 +41,7 @@ def edge_boundary(
     nbunch2: Iterable[_T] | None = ...,
     data: Literal[False] = False,
     keys: Literal[True] = True,
-    default: Any = ...,
+    default: Incomplete = ...,
 ) -> Iterable[tuple[_T, _T, int]]: ...
 @overload
 def edge_boundary(
@@ -50,8 +50,8 @@ def edge_boundary(
     nbunch2: Iterable[_T] | None = ...,
     data: Literal[True] = True,
     keys: Literal[True] = True,
-    default: Any = ...,
-) -> Iterable[tuple[_T, _T, int, dict[str, Any]]]: ...
+    default: Incomplete = ...,
+) -> Iterable[tuple[_T, _T, int, dict[str, Incomplete]]]: ...
 @overload
 def edge_boundary(
     G: Graph[_T],

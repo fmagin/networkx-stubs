@@ -1,11 +1,11 @@
-from typing import Any, overload
-from typing_extensions import Literal
-from collections.abc import Iterable, Callable
+from collections.abc import Callable, Iterable
+from typing import Incomplete, overload
 
 from networkx.classes.graph import Graph, _Node
+from typing_extensions import Literal
 
 def bridges(G: Graph[_Node], root: _Node | None = ...) -> Iterable[_Node]: ...
-def has_bridges(G: Graph[_Node], root: Any | None = ...) -> bool: ...
+def has_bridges(G: Graph[_Node], root: Incomplete | None = ...) -> bool: ...
 @overload
 def local_bridges(
     G: Graph[_Node],

@@ -1,5 +1,5 @@
-from typing import Any, Generic
 from collections.abc import Iterator
+from typing import Generic, Incomplete
 
 from networkx.classes.coreviews import AdjacencyView
 from networkx.classes.graph import Graph, _Node
@@ -13,8 +13,8 @@ from networkx.classes.reportviews import (
 )
 
 class DiGraph(Graph[_Node], Generic[_Node]):
-    succ: AdjacencyView[_Node, _Node, dict[str, Any]]
-    pred: AdjacencyView[_Node, _Node, dict[str, Any]]
+    succ: AdjacencyView[_Node, _Node, dict[str, Incomplete]]
+    pred: AdjacencyView[_Node, _Node, dict[str, Incomplete]]
     def has_successor(self, u: _Node, v: _Node) -> bool: ...
     def has_predecessor(self, u: _Node, v: _Node) -> bool: ...
     def successors(self, n: _Node) -> Iterator[_Node]: ...

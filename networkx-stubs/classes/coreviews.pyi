@@ -1,7 +1,7 @@
+from collections.abc import Callable, Iterator, Mapping
 from typing import Generic, TypeVar
-from _typeshed import Incomplete
-from collections.abc import Iterator, Callable, Mapping
-from _typeshed import Self
+
+from _typeshed import Incomplete, Self
 
 _T = TypeVar("_T")
 _U = TypeVar("_U")

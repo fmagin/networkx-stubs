@@ -1,10 +1,10 @@
-from typing import overload
 from collections.abc import Iterable
+from typing import overload
 
-from networkx.classes.graph import Graph, _Node
 from networkx.classes.digraph import DiGraph
-from networkx.classes.multigraph import MultiGraph
+from networkx.classes.graph import Graph, _Node
 from networkx.classes.multidigraph import MultiDiGraph
+from networkx.classes.multigraph import MultiGraph
 
 def enumerate_all_cliques(G: Graph[_Node]) -> Iterable[list[_Node]]: ...
 def find_cliques(
